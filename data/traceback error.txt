@@ -1,0 +1,10 @@
+---------------------------------------------------------------------------
+IndexError                                Traceback (most recent call last)
+Cell In[44], line 5
+      3 for j in range(0,4): 
+      4     feature_index = i*4+j # for mfccs, this can be between 0-19
+----> 5     my_data_single_features = my_data[:,feature_index]
+      6     mm =np.mean(my_data_single_features)
+      7     axes[i,j].vlines(mm,0,500)
+
+IndexError: index 12 is out of bounds for axis 1 with size 12
