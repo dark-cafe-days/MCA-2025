@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>MCA2025 week 9</title>
+    <link rel="stylesheet" href="../css/style.css">
+  </head>
+<body>
+
+    <h1>Week 9</h1><br>
+        <h2>Task 1</h2>
+        <p>As before, click on the black-bordered thumbnails to view the full-resolution images in a new tab.</p>
+     <table class="screenshots">
+	  <tr> 
+		  <td class="text-table"> <a href="../data/wk9_1tickdown.png" target="new"> <img src="../data/9_10thumbnail.png"> </a> </td>
+
+		  <td class="text-table"> <a href="../data/wk9_2toughdecision.png" target="new"> <img src="../data/9_11thumbnail.png"> </a> </td>
+		<td class="text-table"> <a href="../data/wk9_3bluebird.png" target="new"> <img src="../data/9_12thumbnail.png"> </a> </td>
+	  </tr>
+	  <tr> 
+		  <td class="text-table"> Tick Down </td>
+		  <td class="text-table"> Tough Decision </td>
+		  <td class="text-table"> Blue Bird Lamentation -Orchestra- </td>
+			
+	  </tr>
+</table>
+
+        <h2>Task 2</h2>
+        <h3>Spectrogram Histograms</h3>
+        <table class="screenshots">
+	  <tr> 
+		  <td class="text-table"> <a href="../data/01tickdown_specanalysis.png" target="new"> <img src="../data/9_1thumbnail.png"> </a> </td>
+
+		  <td class="text-table"> <a href="../data/02toughdecision_specanalysis.png" target="new"> <img src="../data/9_2thumbnail.png"> </a> </td>
+		<td class="text-table"> <a href="../data/03bluebird_specanalysis.png" target="new"> <img src="../data/9_3thumbnail.png"> </a> </td>
+	  </tr>
+	  <tr> 
+		  <td class="text-table"> Tick Down </td>
+		  <td class="text-table"> Tough Decision </td>
+		  <td class="text-table"> Blue Bird Lamentation -Orchestra- </td>
+			
+	  </tr>
+</table>
+
+        <h3>MFCC Histograms</h3>
+        <table class="screenshots">
+	  <tr> 
+		  <td class="text-table"> <a href="../data/01tickdown_mfccanalysis.png" target="new"> <img src="../data/9_4thumbnail.png"> </a> </td>
+
+		  <td class="text-table"> <a href="../data/02toughdecision_mfccanalysis.png" target="new"> <img src="../data/9_5thumbnail.png"> </a> </td>
+		<td class="text-table"> <a href="../data/03bluebird_mfccanalysis.png" target="new"> <img src="../data/9_6thumbnail.png"> </a> </td>
+	  </tr>
+	  <tr> 
+		  <td class="text-table"> Tick Down </td>
+		  <td class="text-table"> Tough Decision </td>
+		  <td class="text-table"> Blue Bird Lamentation -Orchestra- </td>
+			
+	  </tr>
+</table>
+
+        <h3>Chromagram Histograms</h3>
+        <p>The process of creating these invariably invoked an error message, and the python script would only generate the first 12 of the 20 histrograms. After consulting with the course GTA, we decided to go forward with what the script generated, given it was at least giving us a valid output, even if not the whole thing. The relatively short lengths of these tracks could potentially be the culprit, with <i>Blue Bird</i> being the longest at only 2m45s.</p>
+        <table class="screenshots">
+	  <tr> 
+		  <td class="text-table"> <a href="../data/01tickdown_chromaanalysis.png" target="new"> <img src="../data/9_7thumbnail.png"> </a> </td>
+
+		  <td class="text-table"> <a href="../data/02toughdecision_chromaanalysis.png" target="new"> <img src="../data/9_8thumbnail.png"> </a> </td>
+		<td class="text-table"> <a href="../data/03bluebird_chromaanalysis.png" target="new"> <img src="../data/9_9thumbnail.png"> </a> </td>
+	  </tr>
+	  <tr> 
+		  <td class="text-table"> Tick Down </td>
+		  <td class="text-table"> Tough Decision </td>
+		  <td class="text-table"> Blue Bird Lamentation -Orchestra- </td>
+			
+	  </tr>
+</table>
+
+    <h3>Histogram comparisons</h3>
+        <p>I chose to compare my MFCC graphs, as not only does the difference in genre bear more fruitful analysis via this format.</p>
+        <p>The first track, <i>Tick Down</i>, has a piano that sounds similar to the one utilised occasionally throughout <i>Blue Bird</i>, and they are the two that sound the most similar in style. Despite this, the MFCC histograms are completely divergent, notably with regards to the range of their x-axis. The feature labelled '6' on <i>Tick Down</i> has merely fifteen entries on its graph, while the sixth feature on <i>Blue Bird</i> has far too many to count by eye. While this may not correlate directly to the acoustic and musical complexity of the songs, it is a notable difference between the three tracks.</p>
+        <p><i>Tough Decision</i> is the song most incidental - the one most easily categorised as 'background music' - of the three, and it is certainly the only one designed to endlessly loop, where <i>Tick Down</i> and <i>Blue Bird</i> each have definitive beginning and end points. Therefore, it is not particularly surprising that features 5 through to 18 bear remarkable similarity, if this is indeed the section designed to loop seamlessly.</p>
+
+
+</body>
+</html>
